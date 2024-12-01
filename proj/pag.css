@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #dc143c;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 2.5em;
+}
+
+#contador {
+  font-size: 1.5em;
+  color: white;
+}
+/* Media query para telas menores, como celulares */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+  body {
+    font-size: 1.2rem;
+  }
+
+  #contador {
+    font-size: 1.2rem; /* Reduz o tamanho do texto do contador */
+  }
+
+  .container {
+    padding: 10px; /* Ajusta o espaçamento */
+  }
+}
