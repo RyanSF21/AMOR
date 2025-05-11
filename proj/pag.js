@@ -21,3 +21,14 @@ function atualizarContador() {
 
 // Atualiza o contador a cada segundo
 setInterval(atualizarContador, 500);
+
+// CARROSSEL AUTOMÁTICO
+let index = 0;
+function moverCarrossel() {
+  const carrossel = document.querySelector(".carousel-images");
+  const total = carrossel.children.length;
+  index = (index + 1) % total;
+  carrossel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(moverCarrossel, 3000); // Troca de imagem a cada 3 segundos
